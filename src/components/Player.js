@@ -17,6 +17,7 @@ const Player = ({ currentSong, isPlaying, setIsplaying }) => {
       audioRef.current.pause();
       setIsplaying(!isPlaying);
     }
+    audioRef.current.volume = 0.05;
   };
 
   const [songInfo, setSongInfo] = useState({
@@ -25,8 +26,8 @@ const Player = ({ currentSong, isPlaying, setIsplaying }) => {
   });
   const timeUpdateHandler = (e) => {
     setSongInfo({
-      currentTime: e.target.currentTime,
-      duration: e.target.duration
+      duration: e.target.duration,
+      currentTime: e.target.currentTime
     });
   };
 
