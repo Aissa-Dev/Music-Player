@@ -5,7 +5,7 @@ const Song = ({ currentSong, isPlaying }) => {
     <div className="song-container">
       <img
         src={currentSong.cover}
-        className={isPlaying ? "spining" : "notSpining"}
+        className={isPlaying ? "spinings" : "notSpining"}
         alt=""
       />
       <h2>{currentSong.name}</h2>
