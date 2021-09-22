@@ -7,15 +7,8 @@
 
   img {
     width: 20%;
-    border-radius: 50%;
-    z-index: 1;
-  }
-
-  .spining {
-    animation-name: rotate;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    //border-radius: 50%;
+    // z-index: 1;
   }
 
   h2 {
@@ -23,21 +16,5 @@
   }
   h3 {
     font-size: 1rem;
-  }
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  @keyframes spinx {
-    from {
-      transform: rotatex(0deg);
-    }
-    to {
-      transform: rotatex(360deg);
-    }
   }
 }

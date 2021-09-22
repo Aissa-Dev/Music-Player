@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faPlay,
@@ -9,11 +9,13 @@ import {
 
 const Player = ({
   currentSong,
+  songs,
   isPlaying,
   setIsplaying,
   audioRef,
   songInfo,
-  setSongInfo
+  setSongInfo,
+  setCurrentSong
 }) => {
   const playSongHandler = () => {
     if (!isPlaying) {
@@ -36,13 +38,29 @@ const Player = ({
     audioRef.current.currentTime = e.target.value;
     setSongInfo({ ...songInfo, currentTime: e.target.value });
   };
+
+  const skipTrackHandler = (direction) => {
+    let currentIndex = songs.findIndex((song) => {
+      return song.id === currentSong.id;
+    });
+    console.log("index : ", currentIndex);
+
+    if (direction === "skip-forward") {
+      setCurrentSong(songs[(currentIndex + 1) % songs.length]);
+    } else {
+      if (currentIndex === 0) {
+        currentIndex = songs.length;
+      }
+      setCurrentSong(songs[(currentIndex - 1) % songs.length]);
+    }
+  };
   return (
     <div className="player">
       <div className="time-control">
         <p>{formatingTime(songInfo.currentTime)}</p>
         <input
           min={0}
-          max={songInfo.duration}
+          max={songInfo.duration || 0}
           value={songInfo.currentTime}
           onChange={dragHandler}
           type="range"
@@ -50,7 +68,12 @@ const Player = ({
         <p>{formatingTime(songInfo.duration)}</p>
       </div>
       <div className="play-control">
-        <FontAwesomeIcon className="skip-back" size="2x" icon={faAngleLeft} />
+        <FontAwesomeIcon
+          className="skip-back"
+          onClick={() => skipTrackHandler("skip-back")}
+          size="2x"
+          icon={faAngleLeft}
+        />
         <FontAwesomeIcon
           className="play"
           onClick={playSongHandler}
@@ -59,6 +82,7 @@ const Player = ({
         />
         <FontAwesomeIcon
           className="skip-forward"
+          onClick={() => skipTrackHandler("skip-forward")}
           size="2x"
           icon={faAngleRight}
         />
