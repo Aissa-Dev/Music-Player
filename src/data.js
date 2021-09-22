@@ -9,7 +9,7 @@ const getMusics = () => {
         "https://linkstorage.linkfire.com/medialinks/images/f46aee52-b562-442b-bf05-42c239d6b7f1/artwork-440x440.jpg",
       id: uuidv4(),
       active: true,
-      color: ["#FEB278", "#F14091"],
+      color: ["#FEAF77", "#8A0063"],
       audio:
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/589/keep-you-1586957598-zpvct6T3UD.mp3"
     },
@@ -20,7 +20,7 @@ const getMusics = () => {
         "https://linkstorage.linkfire.com/medialinks/images/f51e39e0-a8fc-45a7-9194-0c9b6bca520d/artwork-440x440.jpg",
       id: uuidv4(),
       active: false,
-      color: ["#405FE6", "#45A1FD"],
+      color: ["#32FEFB", "#021564"],
       audio:
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/965/mr-bully-1624525239-TwxU4630qj.mp3"
     },
@@ -31,7 +31,7 @@ const getMusics = () => {
         "https://linkstorage.linkfire.com/medialinks/images/0f999a17-a97a-4343-91ad-79b8ab40bbc2/artwork-440x440.jpg",
       id: uuidv4(),
       active: false,
-      color: ["#D04A38", "#D24740"],
+      color: ["#D45433", "#3F4895"],
       audio:
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/963/power-1623945636-cmtHdqhL1v.mp3"
     },
@@ -64,7 +64,7 @@ const getMusics = () => {
         "https://linkstorage.linkfire.com/medialinks/images/2532f156-041a-496d-9efc-88ecf7917043/artwork-440x440.jpg",
       id: uuidv4(),
       active: false,
-      color: ["#C0CDC4", "#3D1C17"],
+      color: ["#B8C8BC", "#3D1C17"],
       audio:
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/903/the-revolution-1612454454-WLdzt3tdFe.mp3"
     },
@@ -97,7 +97,7 @@ const getMusics = () => {
         "https://linkstorage.linkfire.com/medialinks/images/1250d7ac-46d9-41b4-95fe-38acd5ed11ee/artwork-440x440.jpg",
       id: uuidv4(),
       active: false,
-      color: ["#BA5356", "#C45A3F"],
+      color: ["#E8B981", "#631D4F"],
       audio:
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/634/desire-1586958536-ml5Igco6eZ.mp3"
     },
@@ -108,7 +108,7 @@ const getMusics = () => {
         "https://linkstorage.linkfire.com/medialinks/images/39cdd19f-be7d-47f6-b826-36dc5920be00/artwork-440x440.jpg",
       id: uuidv4(),
       active: false,
-      color: ["#AA5B6E", "#0F1B32"],
+      color: ["#AF5E62", "#0F1B32"],
       audio:
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/633/redemption-ft-riell-1586958515-ANrfEQ0iv3.mp3"
     },
@@ -119,7 +119,7 @@ const getMusics = () => {
         "https://linkstorage.linkfire.com/medialinks/images/4863f137-4454-47c8-9926-16ac06dfc3a1/artwork-440x440.jpg",
       id: uuidv4(),
       active: false,
-      color: ["#261C1B", "#204041"],
+      color: ["#91A36F", "#1F444B"],
       audio:
         "https://ncsmusic.s3.eu-west-1.amazonaws.com/tracks/000/000/424/runaway-feat-valentina-franco-tari-remix-1586952950-2NFtl0HHM9.mp3"
     }
