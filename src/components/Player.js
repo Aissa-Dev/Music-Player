@@ -96,7 +96,7 @@ const Player = ({
           />
           <div style={trackAnim} className="animate-track"></div>
         </div>
-        <p>{songInfo.duration ? formatingTime(songInfo.duration) : "0:00"}</p>
+        <p>{songInfo.duration ? formatingTime(songInfo.duration) : "00:00"}</p>
       </div>
       <div className="play-control">
         <FontAwesomeIcon
